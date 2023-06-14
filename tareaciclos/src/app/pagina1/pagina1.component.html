@@ -1,0 +1,17 @@
+<p>pagina1 works!</p>
+<h1>escriba un nombre</h1>
+<input type="text" [(ngModel)]="nombre" />
+
+<mat-form-field>
+    <mat-label>Snack bar duration (seconds)</mat-label>
+    <input type="number" [(ngModel)]="DurationInSeconds" matInput>
+  </mat-form-field>
+  
+  <button mat-stroked-button (click)="openSnackBar()" aria-label="Show an example snack-bar">
+    Pizza party
+  </button>
+  <button mat-stroked-button (click)="navegar()" aria-label="">
+    NAVEGAR A OTRO MODULO
+  </button>
+
+  <app-vista></app-vista>
